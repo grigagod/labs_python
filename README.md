@@ -3,6 +3,7 @@
 - [x] INTER
 - [x] FILE
 - [x] CHECK  <br/>
+
 (l, r) - is interval of array to get sum from.
 (0, len(arr) - 1) - covers all array.
 ####  1. INTER & FILE
@@ -104,7 +105,7 @@ and what you will obtain:
 
 ### Task 4. Flatten
 #### Requirements :
-- [] ARGS
+- [ ] ARGS
 - [x] MODULE
 
 #### 1. MODULE
