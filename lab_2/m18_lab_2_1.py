@@ -5,7 +5,7 @@ def subsums(lst, lgth):
     total = []
     for i in range(len(lst)):
         subsum += lst[i]
-        if i % lgth == 0:
+        if (i + 1) % lgth == 0 and not i == 0:
             total.append(subsum)
             subsum = 0
     if subsum != 0:
@@ -20,7 +20,7 @@ def rsum(lst, lgth, r):
     while i + lgth <= r and i % lgth == 0:
         total += subsums(lst, lgth)[i // lgth]
         i += lgth
-    for i in range(i, r):
+    for i in range(i, r + 1):
         total += lst[i]
     return total
 
@@ -34,7 +34,6 @@ def segsum(lst, lgth, l, r):
 
 def main():
     string = input('Please enter data or filewithdata.txt : ')
-    print(string[-4:])
     if string[-4:] == '.txt':
         file = open(string, 'r+')
         array = file.readline().split(' ')
@@ -50,6 +49,6 @@ def main():
             settings[i] = int(item)
     except ValueError:
         raise ValueError("Enter correct data, please")
-    print('Sum of chosen segment is {}'.format(segsum(array, int(len(array)**0.5 + 1), settings[0], settings[1])))
+    print('Sum of chosen segment is {}'.format(segsum(array, int(len(array)**0.5), settings[0], settings[1])))
 
 main()

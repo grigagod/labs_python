@@ -71,7 +71,7 @@ def object_writer(obj, tabs, flag = True):
 
 def to_json(obj, flag):
     if flag:
-        file = open('json.txt','w+')
+        file = open('output_json.txt','w+')
         tabs = 0
         if(obj.__class__.__name__ == 'dict'):
             file.write(object_writer(obj, tabs))
@@ -91,4 +91,4 @@ def to_json(obj, flag):
             else:
                 return from_py_to_json(obj, tabs)
 
-print(to_json(m18_lab_2_6.from_json('testjson.txt', True), True))
+to_json(m18_lab_2_6.from_json('input_json.txt', True), True)
