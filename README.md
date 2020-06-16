@@ -175,7 +175,7 @@ Data validation is implemented by the following construction:
         ValueError(msg)
 ```
 
-### Task 7. 2<sup>*n*</sup>
+### Task 8. 2<sup>*n*</sup>
 #### Requirements :
 - [x] MODULE
 - [x] INTER
@@ -183,9 +183,9 @@ Data validation is implemented by the following construction:
 - [x] CHECK  <br/>
 This module works for positive integer and decimal fractions
 #### 1. MODULE
-You can easily use m18_lab_2_7.py as module just make sure that it is in the current folder :
+You can easily use m18_lab_2_8.py as module just make sure that it is in the current folder :
 ```python
-import m18_lab_2_4 as module
+import m18_lab_2_8 as module
 
 module.main(positive_number)
 ``` 
@@ -195,13 +195,13 @@ Also my module supports processing from command line. There are 4 flags (1 requi
  
 Example of processing from command line with args:  
 ```shell
-python m18_lab_2_7.py -I 12
+python m18_lab_2_8.py -I 12
 ```
 ![Alt text](./screenshots/task8_args.png?raw=true "Args example")
 
 Example of processing from command line without args (Interactive mode):  
 ```shell
-python m18_lab_2_7.py
+python m18_lab_2_8.py
 ```
 ![Alt text](./screenshots/task8_inter.png?raw=true "Inter example")
 
